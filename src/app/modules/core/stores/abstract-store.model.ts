@@ -9,10 +9,11 @@ export abstract class AbstractStore<T> {
     this.state = this._deepFreeze(initialState);
     this.stateSource = new BehaviorSubject<T>(this.state);
   }
-
+  
   public setState(state: T): void {
     this.state = this._deepFreeze(state);
     this.stateSource.next(this.state);
+    
   }
 
   public select<R>(fn: (state: T) => R): Observable<R> {

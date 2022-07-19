@@ -6,6 +6,9 @@ const routes: Routes = [
   /*
     @TASK - map route to the todos page
   */
+ {
+  path: '', component: TodosComponent
+ }
 ];
 
 @NgModule({

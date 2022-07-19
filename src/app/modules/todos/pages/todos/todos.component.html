@@ -25,7 +25,7 @@
           (onComplete)="updateTodo($event)">
       </app-todo-list>
       <br />
-      <h5 class="fw-bold">Comleted</h5>
+      <h5 class="fw-bold">Completed</h5>
       <app-todo-list
           [todos]="completed$ | async"
           (onDelete)="deleteTodo($event)">

@@ -1,3 +1,4 @@
+import { listLazyRoutes } from '@angular/compiler/src/aot/lazy_routes';
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Todo } from 'src/app/modules/core/models/todo.model';
 
